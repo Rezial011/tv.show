@@ -1,0 +1,70 @@
+* {
+    transition: 0.2s ease;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.genre {
+    color: mediumseagreen;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.banner button {
+    background-color: mediumseagreen;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: rgb(60, 163, 106);
+}
+
+.burger {
+    transition: 0.4s ease;
+    background-color: seagreen;
+}
+
+.burger a {
+    text-align: left;
+    padding: 10px 25px 10px 25px;
+    width: 100%;
+}
+
+.burger a:hover {
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+.navbar a {
+    padding: 20px 0;
+    border-bottom: transparent solid 1px;   
+}
+
+.navbar a:hover {
+    color: #fb2c36;
+    border-bottom: #fb2c36 solid 1px;
+}
+
+.movieBox:hover, .search a:hover {
+    background-color: #f1f1f1;
+}
+
+.movieBox:hover img, .search a:hover img {
+    filter: brightness(80%);
+}
+
+.movieBox div {
+    background: linear-gradient(135deg, #00000000 50%, mediumseagreen 50%);
+}
+
+.copyright {
+    color: white;
+    background-color: seagreen;
+}
