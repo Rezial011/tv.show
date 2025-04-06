@@ -15,7 +15,7 @@ export default function HomeLayout() {
                     <Form/>
                 </div>
                 <div className="flex flex-wrap justify-around items-center">
-                    <MovieBox/>
+                    <MovieBox path="https://api.tvmaze.com/shows"/>
                 </div>
             </div>
             <Footer/>

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 export default function Banner() {
@@ -41,8 +42,8 @@ export default function Banner() {
             <h1 className="font-bold text-3xl sm:text-5xl lg:text-6xl xl:text-7xl max-w-[500px]">{banner.name}</h1>
             <p className="font-base uppercase tracking-wider text-xs sm:text-sm lg:text-base xl:text-lg mt-2 md:mt-3 md:mb-7 mb-5 xl:mt-4 xl:mb-10 text-gray-300">{banner.genres?.join(" ")}</p>
             <a href="#">
-            <button className="font-light text-sm sm:text-base md:text-lg lg:text-[19px] xl:text-[20px] px-3 py-1 lg:px-4 rounded-full flex gap-3 lg:gap-5 items-center justify-center">
-                Preview <svg className="lg:h-[18px] lg:w-[18px]" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M20.407 35L33.14 24L20.407 13" stroke-width="3"/></svg>
+            <button className="font-light text-sm sm:text-base md:text-lg lg:text-[19px] xl:text-[20px] px-3 py-1 lg:px-4 rounded-full">
+                <Link to={`/movie/${banner.id}`} className=" flex gap-3 lg:gap-5 items-center justify-center">Preview <svg className="lg:h-[18px] lg:w-[18px]" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M20.407 35L33.14 24L20.407 13" stroke-width="3"/></svg></Link>
             </button>
 
             </a>

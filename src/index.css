@@ -68,3 +68,8 @@ html, body {
     color: white;
     background-color: seagreen;
 }
+
+/* single page */
+.slider {
+    scrollbar-color: transparent transparent;
+}

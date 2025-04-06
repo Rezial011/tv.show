@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Form() {
   const [shows, setShows] = useState([]);
@@ -42,7 +43,7 @@ export default function Form() {
           query && (
           <div className="search absolute mt-1 right-7 sm:right-1/14 md:right-1/25 lg:right-1/30 max-h-[100vh] rounded-sm overflow-scroll z-10">
             {shows.map((index) => (
-                <a key={index.show.id} href="#" className="flex gap-3 p-1 h-30 sm:h-35 lg:h-38 xl:h-40 w-[205px] sm:w-[230px] md:w-[250px] xl:w-[280px] bg-gray-50 border border-transparent border-b-gray-300">
+                <Link to={`/movie/${index.show.id}`} key={index.show.id} onClick={(e) => e.target.value()} className="flex gap-3 p-1 h-30 sm:h-35 lg:h-38 xl:h-40 w-[205px] sm:w-[230px] md:w-[250px] xl:w-[280px] bg-gray-50 border border-transparent border-b-gray-300">
                     {index.show.image && <img className="w-20 sm:w-25 lg:w-27 rounded-sm" src={index.show.image.medium} alt={index.show.name} />}
                     <div>
                       <h3 className="text-sm font-medium sm:text-[15px] mt-1 sm:mt-2 xl:mt-3  line-clamp-2">{index.show.name}</h3>
@@ -50,7 +51,7 @@ export default function Form() {
                       <br className="hidden lg:inline"/>
                       <p className="text-xs sm:text-[13px] font-semibold">❤ {index.show.rating.average || '-'}</p>
                     </div>
-                </a>
+                </Link>
             ))}
         </div> )
         }
