@@ -47,7 +47,7 @@ console.log("movie", movie);
 
   return (
     <section className="flex justify-center items-center flex-col">
-      <div className="response flex flex-col pb-5 md:px-3 bg-white rounded-sm w-[95vw] sm:w-[93vw] md:w-[95vw] lg:w-[90vw] xl:w-[87vw]">
+      <div className="response flex flex-col pb-5 md:px-3 bg-white rounded-sm w-[92vw] md:w-[95vw] lg:w-[90vw] xl:w-[87vw]">
         <div className="flex items-center z-10 bg-white p-5 sm:py-0 mb-3 rounded-sm border border-transparent border-b-gray-300">
           <Navbar />
           <Form />

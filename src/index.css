@@ -52,6 +52,12 @@ html, body {
     border-bottom: #fb2c36 solid 1px;
 }
 
+@media (min-width:375px) {
+    .season {
+        justify-content: space-between;
+    }
+}
+
 .movieBox:hover, .search a:hover {
     background-color: #f1f1f1;
 }

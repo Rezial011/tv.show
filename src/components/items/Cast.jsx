@@ -26,7 +26,7 @@ export default function Cast() {
             <div className="flex gap-2 sm:gap-3 md:gap-4 lg:gap-5 w-max" >
             {
             casts.map((cast) => (
-                <div key={cast.person.id} className="flex flex-col items-center text-center w-30 sm:w-35 lg:w-38">
+                <div key={cast.person.id} className="flex flex-col items-center text-center w-30 sm:w-35 lg:w-38 ">
                     <div className="h-40 sm:h-45 md:h-49 lg:h-55 w-full flex justify-center items-center mb-2 overflow-hidden rounded-sm" style={{boxShadow : 'rgba(0, 0, 0, 0.16) 2.4px 2.4px 5px'}}>
                         <img
                         onMouseEnter={() => setChar(cast.person.id)} 
