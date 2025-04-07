@@ -53,7 +53,7 @@ html, body {
 }
 
 @media (min-width:375px) {
-    .season {
+    .seasons {
         justify-content: space-between;
     }
 }
