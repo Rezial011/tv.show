@@ -61,8 +61,8 @@ console.log("movie", movie);
                 style={{boxShadow : 'rgba(0, 0, 0, 0.16) 2.4px 2.4px 5px'}}
             />
             <div className="flex flex-col justify-center w-full mx-5 sm:ms-8 md:ms-10 lg:ms-12">
-                <h1 className="title font-bold text-3xl sm:text-4xl lg:text-5xl line-clamp-3">{movie.name}</h1>
-                <p className="genre text-sm sm:text-base lg:text-lg">{movie.genres?.join(", ")}</p>
+                <h1 className="title font-bold text-3xl sm:text-4xl md:text-[45px] lg:text-5xl line-clamp-3">{movie.name}</h1>
+                <p className="genre text-sm sm:text-base md:text-[17px] lg:text-lg">{movie.genres?.join(", ")}</p>
                 
                 <p className="text-sm sm:text-base md:text-lg font-medium md:font-semibold lg:font-bold text-gray-400 mt-3">{movie.network?.name}</p>
                 <p className="text-gray-500 text-sm md:text-base lg:text-lg font-light ">{movie.schedule?.days.join(", ")} {time}</p>
